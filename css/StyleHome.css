@@ -1,0 +1,362 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Meow+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  a{
+    cursor: pointer;
+  }
+
+  body{
+    padding-top: 8vh;
+    background-color: #1d1d1d;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+
+  }
+  
+  .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  .navbar nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #23232e;
+    height: 8vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+
+  .nav-list i{
+    color: white;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+
+.container-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.input-wrapper{
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    background-color: #2b2b36;
+    border-radius: 5px;
+}
+
+.input-wrapper i{
+    cursor: pointer;
+    color: white;
+}
+
+.input-wrapper input{
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    
+}
+
+.input-wrapper input:focus-visible {
+    outline: none;
+}
+
+/* NÃO MEXA NESSE CSS FAÇA DAQUI PARA BAIXO */
+
+
+.filme-destaque{
+  color: white;
+}
+
+.filme-destaque img{
+  
+  width: 100%;
+  height: 92%;
+  position: absolute;
+  z-index: -1;
+  -webkit-mask-image: linear-gradient(to top, transparent 15%, black 100%);
+
+}
+
+.conteudo-filme-destaque{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-left: 3.5rem;
+  padding-top: 12rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.45);
+  gap: 10px;
+  color: rgb(184, 184, 184);
+  
+}
+
+.titulo-filme-destaque{
+  font-size: 20px;
+  color: white;
+}
+.info-filme-destaque{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.info-filme-destaque span {
+  color: white;
+}
+
+.descricao-filme-destaque{
+  font-size: 16px;
+}
+
+.botao{
+  display: flex;
+  gap: 20px;
+}
+
+.botao a{
+  text-decoration: none;
+}
+
+.play{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 15px;
+  background-color: #fff;
+  color: black;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.play:hover{
+  background-color: #dbdbdb;
+
+}
+
+.mais-informacoes{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 15px;
+  background-color: rgba(0, 0, 0, 0.397);
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.mais-informacoes:hover{
+  background-color: rgba(0, 0, 0, 0.192);
+}
+
+
+.top10{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-top: 50px;
+  max-width: 1000px;
+  margin-left: 3.5rem;
+}
+
+.row-de-filmes{
+  display: flex;
+  justify-content: left;
+  gap: 50px;
+}
+
+.card-top-filme{
+  display: flex;
+  align-items: center;
+}
+.numero{
+  font-size: 13rem;
+  font-weight: 400;
+  margin-right: -2.4rem ;
+  padding-bottom: 70px;
+  
+}
+
+.card-top-filme img{
+  width: 300px;
+  height: 180px;
+  border-radius: 5px 5px;
+  transition: transform .3s;
+}
+
+.card-top-filme img:hover{
+  transform: scale(1.1);
+}
+
+.titulo-card{
+  font-size: 18px;
+}
+
+.info{
+  font-size: 12px ;
+  color: rgb(184, 184, 184);
+  padding-top: 5px;
+}
+
+.card-top-filme i{
+  margin-left: 10px;
+}
+
+.seta-direita{
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.row-filmes-series-recente{
+  display: flex;
+  gap: 20px;
+}
+
+.filmes-series-recente{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-top: 50px;
+  max-width: 1000px;
+  margin-left: 3.5rem;
+  gap: 25px;
+}
+
+.card-filme-seires img{
+  width: 250px;
+  height: 150px;
+  border-radius: 5px;
+  transition: transform .3s;
+}
+
+.card-filme-seires img:hover{
+  transform: scale(1.1);
+
+}
+
+.card-filme-seires i{
+  margin-left: 10px;
+}
+
+footer{ 
+  color: white;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer h3{
+  margin-left: 7rem;
+  padding-top: 20px;
+}
+
+footer img{
+  width: 100px;
+}
+
+footer p{
+  text-align: center;
+  color: #838383;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.redes-sociais{
+  padding-left: 7rem;
+  color: #838383;
+  font-size: 40px;
+  display: flex;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+
+.sub-links{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 7rem;
+  gap: 20px;
+  
+}
+
+.sub-links a {
+  color: #838383;
+  text-decoration: none;
+}
+
+.sub-links a:hover{
+  text-decoration: underline;
+}
+
+.sub-links div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .primeiro-traco{
+  width: 85%;
+  height: 2px;
+  margin-top: 50px;
+  margin-left: 7rem; 
+  background-color: #838383;
+}
+
+.img-parceiros{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(5, 100px);
+  gap: 50px;
+  padding-top: 20px;
+}
+
+
+.tele-cine{
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.apple-tv{
+  grid-row: 2;
+  grid-column: 4;
+}
+
+.discovery{
+  grid-row: 2;
+  grid-column: 2;
+}
